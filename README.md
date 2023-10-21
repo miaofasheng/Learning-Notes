@@ -1,4 +1,4 @@
-# Paper-sharing
+# Learning-Notes
 
 1. **【论文阅读】QUICforge: 基于 QUIC 协议的客户端伪造请求攻击**<br />
 这篇论⽂是针对 QUIC（Quick UDP Internet Connection）协议发起客⼾端请求伪造攻击，该⼯作由柏林⼯业⼤学分布式基础设施安全实验室的 Yuri Gbur 和 Florian Tschorsch 共同完成。作者从QUIC 协议的设计出发，分析了 (1) 服务端初始请求伪造（Server Initial Request Forgery, SIRF），(2) 版本协商请求伪造 （Version Negotiation Request Forgery, VNRF) 以及 (3) 连接迁移请求伪造（Connection Migration Request Forgery, CMRF ) 这三种典型的客⼾端请求伪造攻击模式。作者发现 VNRF 可⽤于模拟 DNS 等基于 UDP 的协议，SIRF 和 CMRF 可⽤于流量放⼤攻击。作者评估了 13 种开源的 QUIC 协议实现探索了请求伪造攻击的影响，结果表明，所有实现都受 SIRF 和 VNRF 请求伪造攻击影响，QUIC 协议存在潜在的脆弱性。<br />
