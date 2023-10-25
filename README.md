@@ -11,3 +11,6 @@
 
 3. **【论文阅读】Extended DNS Errors: 释放 DNS 故障排除的全部潜力**<br />
 本篇论文是关于 Extended DNS Errors（EDE）在定位域名解析故障根因方面的实践效果。域名解析故障根因的定位始终是一个难题，RFC 8914 (Extended DNS Errors or EDE) 通过在 OPT 资源记录中定义一些新的标志位来解决该问题。作者对支持 EDE 的四个主要 DNS 提供商和三个大型公共 DNS 解析器进行测试，以探究 EDE的实践效果。作者发现，EDE 能够使得管理者缩小 DNS 解析故障根因范围，但针对测试的 DNS 解析器，94% 返回的标志位都不相同，Cloudflare DNS 是 EDE 标准的最佳实现（回复的最精确最精确）。因为，作者在 Cloudflare DNS 解析器上进行 303 M 个注册域名的测试，有 17.7 M 个域名触发了 EDE 协议，其中，无效授权（Lame delegations）和 DNSSEC 认证失败是最常见的 DNS 解析错误。
+
+4. **【技术学习】 Protective Domain Name Service（PDNS）**
+从网络钓鱼，恶意链接到利用常见网址拼写错误的虚假 URL，域名在多维度易遭受网络攻击，PDNS 是以设备为中心，为了阻止恶意攻击者对域名的滥用，并保护合法用户的安全的一种服务，部署和使用较为方便。
